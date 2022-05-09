@@ -4,7 +4,7 @@ module.exports = function (gulp, $, browserSync) {
 	gulp.task('inline', function () {
 
 		return gulp.src([
-			'./dist/*.html',
+			'www/*.html',
 		])
 		.pipe(replace(/<link rel="stylesheet" href="(.*?)"[^>]*>/g, function(s, filename) {
 			var style = fs.readFileSync(filename, 'utf8');
@@ -14,6 +14,6 @@ module.exports = function (gulp, $, browserSync) {
 			var script = fs.readFileSync(filename, 'utf8');
 			return '<script>\n' + script + '\n</script>';
 		}))
-		.pipe(gulp.dest('./dist'));
+		.pipe(gulp.dest('www'));
 	});
 };

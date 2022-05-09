@@ -3,12 +3,12 @@ module.exports = function (gulp, $, browserSync) {
 	gulp.task('base64', function () {
 
 		return gulp.src([
-			'./dist/*.html',
+			'www/*.html',
 		])
 		.pipe(image64('./',{
             prefix: "",
             suffix: ""
         }))
-		.pipe(gulp.dest('./dist'));
+		.pipe(gulp.dest('www'));
 	});
 };

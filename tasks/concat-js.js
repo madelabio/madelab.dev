@@ -22,6 +22,6 @@ module.exports = function (gulp, $, browserSync) {
 				// 'src/vendor/swiper.js',
 			])
 			.pipe($.concat('madelab.js'))
-			.pipe(gulp.dest('./dist/js'));
+			.pipe(gulp.dest('www/js'));
 	});
 };

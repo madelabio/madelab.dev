@@ -24,8 +24,6 @@ log.txt
 .versions/
 tmp/
 temp/
-dist/
-www/
 wwwroot/
 
 # Runtime data

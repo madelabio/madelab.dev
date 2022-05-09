@@ -3,13 +3,13 @@ module.exports = function (gulp, $, browserSync) {
 	const terser = require('gulp-terser')
 	gulp.task('js-min', function () {
 		return gulp.src([
-				'./dist/js/*.js',
+				'www/js/*.js',
 			])
 			.pipe(terser())
 			.pipe(strip())
 			.pipe($.rename({
                 suffix: '.min'
             }))
-			.pipe(gulp.dest('./dist/js'));
+			.pipe(gulp.dest('www/js'));
 	});
 };

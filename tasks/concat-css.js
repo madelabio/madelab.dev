@@ -14,6 +14,6 @@ module.exports = function (gulp, $, browserSync) {
 				// 'src/vendor/plyr.css',
 			])
 			.pipe($.concat('madelab.css'))
-			.pipe(gulp.dest('./dist/css'));
+			.pipe(gulp.dest('www/css'));
 	});
 };

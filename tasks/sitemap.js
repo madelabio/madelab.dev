@@ -3,11 +3,11 @@ module.exports = function (gulp, $, browserSync) {
 	var save = require('gulp-save');
 	gulp.task('sitemap', function () {
 		return gulp.src([
-			'./dist/*.html',
+			'www/*.html',
 		])
 			.pipe(sitemap({
-				siteUrl: 'https://wornandfaded.com'
+				siteUrl: 'https://madelab.dev'
 			}))
-			.pipe(gulp.dest('./dist'))
+			.pipe(gulp.dest('www'))
 	});
 };

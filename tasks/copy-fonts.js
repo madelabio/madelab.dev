@@ -3,12 +3,12 @@ module.exports = function (gulp, $, browserSync) {
 		return gulp.src([
 				'./src/fonts/**.*',
 			])
-			.pipe(gulp.dest('./dist/fonts'));
+			.pipe(gulp.dest('www/fonts'));
 	});
 	gulp.task('copy-webfonts', function () {
 		return gulp.src([
 				'./src/webfonts/**.*',
 			])
-			.pipe(gulp.dest('./dist/webfonts'));
+			.pipe(gulp.dest('www/webfonts'));
 	});
 };
