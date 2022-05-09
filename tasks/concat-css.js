@@ -7,9 +7,9 @@ module.exports = function (gulp, $, browserSync) {
 				'src/vendor/animate.min.css',
 				'src/vendor/bootstrap-icons/bootstrap-icons.css',
 				// 'src/vendor/fontawesome6/all.min.css',
-				'src/vendor/fullpage.css',
-				'src/vendor/fancybox.css',
-				'src/vendor/panzoom.css',
+				// 'src/vendor/fullpage.css',
+				// 'src/vendor/fancybox.css',
+				// 'src/vendor/panzoom.css',
 				// 'src/vendor/swiper.css',
 				// 'src/vendor/plyr.css',
 			])
