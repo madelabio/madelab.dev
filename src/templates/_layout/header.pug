@@ -1,0 +1,51 @@
+<!-- ////////////// HEADER ////////////// -->
+header
+	a.navbar-brand-pc(href="/")
+		img(src="/img/logo-m.png", alt="WORN and FADED - The untold history of the Rock Tee")
+	nav.navbar.navbar-light.navbar-expand-xl
+		a.navbar-brand.animatable(data-animate="active" href="/") 
+			img(src="/img/logo-m.png", alt="WORN and FADED - The untold history of the Rock Tee")
+			//- svg(version="1.1", id="Layer_1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 40 40", style="enable-background:new 0 0 40 40;", xml:space="preserve")
+				path(d="M28.7,7.3L28.7,7.3l-13.1,9.4c-1.8,1.3-2,3.7-0.9,5.3c0,0,0,0,0,0.1l0.1,0c0.4,0.5,0.8,0.9,1.4,1.1l0,0l1.9,0.9L11.3,29V4.7c0-2.9-3.3-4.6-5.7-2.9v31.3v0c0,2.9,3.3,4.6,5.7,2.9l13.1-9.4l0,0c1.8-1.3,2-3.7,0.9-5.3c0,0,0,0,0-0.1l-0.1,0c-0.4-0.5-0.8-0.9-1.4-1.1l-1.9-0.9l6.8-4.9v24.2h0c2.6,1.2,5.7-0.7,5.7-3.6V10.2v0C34.4,7.3,31,5.6,28.7,7.3z")
+
+		//- Đây là nút sẽ hiển thị trong mobile
+		button.navbar-toggler.menu.collapsed.animatable(data-animate="anim" type="button" data-bs-toggle="offcanvas" data-bs-target="#globalMenu" aria-controls="globalMenu" aria-expanded="false" aria-label="Toggle navigation")
+			svg(viewBox="0 0 64 48")
+				path(d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37")
+				path(d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24")
+				path(d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37")
+		#globalMenu.offcanvas.offcanvas-end
+			.offcanvas-header
+				h5.offcanvas-title 
+					img.d-sm-none(src="/img/logo-m.png", alt="WORN and FADED - The untold history of the Rock Tee")
+				button.navbar-toggler.menu.active(type="button" data-bs-dismiss="offcanvas" aria-label="Close")
+					svg(viewBox="0 0 64 48")
+						path(d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37")
+						path(d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24")
+						path(d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37")
+			//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+			.offcanvas-body
+				//- .mr-auto
+				ul.navbar-nav#menu
+					li.nav-item
+						a.nav-link.d-xl-none(href="#worn-video") Videos
+						a.nav-link.d-none.d-xl-block(href="#wornfaded-video") Videos
+					li.nav-item
+						a.nav-link.d-xl-none(href="#worn-synopsis") Synopsis
+						a.nav-link.d-none.d-xl-block(href="#wornfaded-synopsis") Synopsis
+					li.nav-item
+						a.nav-link.d-xl-none(href="#worn-involved") Contribute
+						a.nav-link.d-none.d-xl-block(href="#wornfaded-contribute") Contribute
+					li.nav-item
+						a.nav-link.d-xl-none(href="#worn-credits") Credits
+						a.nav-link.d-none.d-xl-block(href="#wornfaded-credits") Credits
+					li.nav-item
+						a.nav-link.d-xl-none(href="#worn-footer") Follow us
+						a.nav-link.d-none.d-xl-block(href="#wornfaded-footer") Follow us
+					li.nav-item
+						ul.social
+							li
+								a(href="https://instagram.com/wornandfadeddoc" target="_blank")
+									i.bi.bi-instagram
+					
+<!-- ////////////// HEADER ////////////// -->

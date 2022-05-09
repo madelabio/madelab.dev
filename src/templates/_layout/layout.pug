@@ -1,0 +1,58 @@
+include ../_include/_variables
+doctype html
+html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#", class="no-js")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='format-detection', content='telephone=no')
+		meta(name='msapplication-tap-highlight', content='no')
+		<!-- ////////////// Mobile title color ////////////// -->
+		meta(name='theme-color', content=config.SEO.mobile_color)
+		meta(name='msapplication-navbutton-color', content=config.SEO.mobile_color)
+		meta(name='apple-mobile-web-app-status-bar-style', content=config.SEO.mobile_color)
+		title #{title || AppName}
+		link(href="https://fonts.googleapis.com" rel="preconnect")
+		link(href="https://fonts.gstatic.com" rel="preconnect")
+		link(href="https://fast.fonts.net/t/1.css?apiType=css&projectid=9684d242-e7fd-4711-9327-7087b1feab1d" rel="stylesheet")
+		//- link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet")
+		include ../_include/_seo
+		<!-- ////////////// CSS Include ////////////// -->
+		include ../_include/_css
+		block css
+		<!-- ////////////// FAVICON ////////////// -->
+
+		link(rel="apple-touch-icon", sizes="57x57", href=config.favicondist+"apple-icon-57x57.png")
+		link(rel="apple-touch-icon", sizes="60x60", href=config.favicondist+"apple-icon-60x60.png")
+		link(rel="apple-touch-icon", sizes="72x72", href=config.favicondist+"apple-icon-72x72.png")
+		link(rel="apple-touch-icon", sizes="76x76", href=config.favicondist+"apple-icon-76x76.png")
+		link(rel="apple-touch-icon", sizes="114x114", href=config.favicondist+"apple-icon-114x114.png")
+		link(rel="apple-touch-icon", sizes="120x120", href=config.favicondist+"apple-icon-120x120.png")
+		link(rel="apple-touch-icon", sizes="144x144", href=config.favicondist+"apple-icon-144x144.png")
+		link(rel="apple-touch-icon", sizes="152x152", href=config.favicondist+"apple-icon-152x152.png")
+		link(rel="apple-touch-icon", sizes="180x180", href=config.favicondist+"apple-icon-180x180.png")
+		link(rel="icon", type="image/png", sizes="192x192", href=config.favicondist+"android-icon-192x192.png")
+		link(rel="icon", type="image/png", sizes="32x32", href=config.favicondist+"favicon-32x32.png")
+		link(rel="icon", type="image/png", sizes="96x96", href=config.favicondist+"favicon-96x96.png")
+		link(rel="icon", type="image/png", sizes="16x16", href=config.favicondist+"favicon-16x16.png")
+		link(rel="manifest", href=config.favicondist+"manifest.json")
+		meta(name="msapplication-TileColor", content="#000000")
+		meta(name="msapplication-TileImage", content=config.favicondist+"ms-icon-144x144.png")
+		meta(name="theme-color", content="#000000")
+	body#top-page.index-fullwidth(class=bodyclass+'-page' || 'default')
+		
+		<!-- ////////////// Header ////////////// -->
+		include header
+		<!-- ////////////// End Header ////////////// -->
+		<!-- ////////////// Begin Main ////////////// -->
+		main
+			block body
+		<!-- ////////////// End Main ////////////// -->
+		<!-- ////////////// Footer ////////////// -->
+		//- include footer
+		
+		<!-- ////////////// End Footer ////////////// -->
+		<!-- ////////////// Javascript Include ////////////// -->
+		include ../_include/_script
+		block js
+

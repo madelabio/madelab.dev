@@ -1,0 +1,87 @@
+#worn-home
+	height: 100%
+	min-height: 100vh
+	display: flex
+	align-items: flex-end
+	overflow-x: hidden
+	position: relative
+	background-color: #24211d
+	#video-container-fullscreen
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		z-index: 10
+		overflow: hidden
+		video 
+			width: 100%
+			height: 100%
+			object-fit: cover
+		.overlay 
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: 20
+			background-color: rgba(0,0,0,0.75)
+			padding-left: 3rem
+			padding-right: 3rem
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			h1 
+				padding-top: 2rem
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				.animate__delay-05s
+					animation-delay: 0.5s
+				img 
+					width: 100%
+					+media-breakpoint-up(md)
+						max-width: 500px
+					+media-breakpoint-up(xxl)
+						max-width: 600px
+			ul
+				margin-top: 2rem
+				.animate__delay-1-5s
+					animation-delay: 1.5s
+				li 
+					margin-top: 1rem
+					+media-breakpoint-up(md)
+						display: inline-block
+						margin-left: .5rem 
+						margin-right: .5rem
+				.viewmore
+					// border: 2px solid $why
+					background: rgba(0,0,0,.3)
+					border-radius: 0
+					color: #e5e4d8 
+					text-transform: uppercase
+					font-family: 'Neue Kabel'
+					text-transform: uppercase
+					font-weight: 900
+					padding: 1rem 1.5rem .7rem 1.5rem
+					letter-spacing: 2px
+					font-size: 1.25rem
+					text-decoration: none
+					text-align: center
+					display: block
+					box-shadow: 0 0 0 2px $why inset
+					+media-breakpoint-up(md)
+						padding: .7rem 3rem
+						font-size: 1.5rem
+					&:hover 
+						background: rgba(255,255,255,.15)
+						// border: 2px solid rgba(255,255,255,0)
+					&:hover,
+					&:active,
+					&:focus 
+						box-shadow: 0 0 0 2px $why inset
+						outline: none

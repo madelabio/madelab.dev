@@ -1,0 +1,19 @@
+// INIT ROOT SETUP 
+\::-webkit-scrollbar
+	-webkit-appearance: none
+	height: 8px
+	overflow-y: scroll
+	width: 8px
+	background-color: transparent
+\::-webkit-scrollbar-track
+	background: #24211d
+\::-webkit-scrollbar-thumb
+	background: $link
+	height: 100px
+	// border-radius: 8px
+	&:hover
+		background: $why
+// Firefox scrollbar fix
+	html, body, *
+	scrollbar-width: thin
+	scrollbar-color: $why #24211d

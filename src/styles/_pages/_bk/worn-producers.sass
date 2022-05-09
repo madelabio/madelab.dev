@@ -1,0 +1,37 @@
+#worn-producers
+	background: $sen url('../img/img-04.jpg') no-repeat center center
+	background-size: cover
+	background-attachment: fixed
+	// height: 100vh
+	// width: 100vw
+	min-height: 100%
+	min-width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	overflow: hidden
+	position: relative
+	padding: 8rem 2rem
+	border-top: 1px solid $why
+	border-bottom: 1px solid $why
+	h3 
+		font-family: 'Neue Kabel'
+		font-weight: 900
+	p 
+		font-size: 1.1rem
+	+media-breakpoint-down(sm)
+		.why h2, 
+		.why .h2
+			font-size: 3.6rem
+	@media (max-width: 350px)
+		padding: 2rem 1rem
+		.why h2, 
+		.why .h2
+			font-size: 3rem
+	+media-breakpoint-up(md)
+		padding: 12rem 3rem
+	+media-breakpoint-up(xl)
+		padding: 10rem 4rem
+	+media-breakpoint-up(xl)
+		padding: 15rem 4rem

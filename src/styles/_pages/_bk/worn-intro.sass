@@ -1,0 +1,92 @@
+#worn-intro
+	background: $sen url('../img/img-02.jpg') no-repeat center center
+	background-size: cover
+	// height: 100vh
+	// width: 100vw
+	min-height: 100%
+	min-width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	position: relative
+	overflow: hidden
+	padding: 8rem 2rem
+	background-attachment: fixed
+	border-top: 1px solid $why
+	border-bottom: 1px solid $why
+	.content
+		.quotes 
+			text-shadow: 0px 0px 2px rgba(0,0,0,0.5)
+			text-align: center
+			font-size: 1.5rem
+			margin-bottom: 2rem
+		.intro
+			figure
+				border: 10px solid $main
+				position: relative
+				figcaption
+					position: absolute
+					top: 50% 
+					left: 50%
+					width: 50px
+					height: 50px
+					// border-radius: 10px
+					transform: translate(-50%, -50%)
+					text-align: center
+					font-size: 1.5rem
+					line-height: 1
+					color: $main
+					background: rgba(red($why), green($why), blue($why), 0.85)
+					border-radius: 0
+					z-index: 10
+					display: flex
+					justify-content: center
+					align-items: center
+	+media-breakpoint-up(md)
+		padding: 12rem 3rem
+		.content
+			.quotes
+				font-size: 2rem
+	+media-breakpoint-up(lg)
+		.content
+			.quotes
+				font-size: 2rem
+				line-height: 1.6
+				padding: 0 3rem
+			.intro
+				figure
+					max-width: 650px
+					margin: 0 auto
+	+media-breakpoint-up(xl)
+		padding: 10rem 4rem
+		.content
+			position: relative
+			.quotes
+				position: absolute
+				background: rgba(0,0,0,0.95)
+				padding: 2rem
+				z-index: 10
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				margin: 0
+				text-align: left
+				max-width: 50%
+				border: 6px solid rgba(red($why), green($why), blue($why), 0.9)
+				font-size: 2rem
+			.intro
+				figure
+					max-width: 70%
+					margin: 0 0 0 auto
+					figcaption
+						right: 0
+						left: unset 
+						top: 0
+						transform: none 
+						// background: rgba(red($why), green($why), blue($why), 0.85)
+						// border-radius: 0
+						width: 100px
+						height: 100px
+	+media-breakpoint-up(xl)
+		padding: 15rem 4rem
